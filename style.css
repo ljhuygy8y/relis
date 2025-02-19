@@ -48,7 +48,6 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('img\herosection.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +104,157 @@ h2 {
     animation: marquee 10s linear infinite;
 }
 
+
+.content{
+    width: 755px;
+    height: 693px;
+    background: url('img/pngwing.com.png');
+}
+
 @keyframes marquee {
     from { transform: translateX(100%); }
     to { transform: translateX(-100%); }
+}
+
+.programs {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('programs_bg.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.programs h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.programs p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.programs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.program-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.program-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.program-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.program-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.membership {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('membership_bg.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.membership h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.membership p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.membership-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.membership-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    border: 2px solid yellow;
+    position: relative;
+    overflow: hidden;
+}
+
+.membership-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.membership-card.recommended {
+    border: 2px solid #FFD700;
+    background: rgba(255, 215, 0, 0.2);
+}
+
+.recommended-text {
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.membership-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+.membership-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.membership-card span {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.select-btn {
+    background: yellow;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.select-btn:hover {
+    background: #FFD700;
 }
